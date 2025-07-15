@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thin Clients Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="start-page">
+    <h1>Thin Clients in API Architecture</h1>
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div class="container" id="quiz-page" style="display: none;">
+    <h2 id="question"></h2>
+    <div id="options"></div>
+    <button onclick="nextQuestion()">Next</button>
+  </div>
+
+  <div class="container" id="score-page" style="display: none;">
+    <h2>Quiz Completed!</h2>
+    <p id="score"></p>
+    <button onclick="location.reload()">Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
